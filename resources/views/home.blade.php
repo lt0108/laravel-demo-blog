@@ -1,4 +1,4 @@
-@extends('layouts.app')
+<!-- @extends('layouts.app') -->
 
 @section('content')
 <div class="container">
@@ -14,13 +14,13 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    这是前台首页，不需要登录!
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" style="margin-top:20px">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">文章列表</div>
