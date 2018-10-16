@@ -35,6 +35,10 @@ Route::get('now', function () {
 Route::group(['middleware' => 'auth', 'namespace' => 'Admin', 'prefix' => 'admin'], function() {
     //后台首页
     Route::get('/', 'HomeController@index');
-    //
-    Route::get('article', 'AricleController@index');
+
+    // 显示列表路由
+    // Route::get('article', 'ArticleController@index');
+
+    //使用资源路由，实现增删改查
+    Route::resource('articles', 'ArticleController');
 });

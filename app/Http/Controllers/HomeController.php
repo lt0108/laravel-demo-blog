@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Article;
+
 class HomeController extends Controller
 {
     /**
@@ -23,7 +25,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home')->with('articles', \App\Article::all());//->withArticles(\APP\Article::all());
+        return view('home')->with('articles', Article::all());//->withArticles(\APP\Article::all());
         // 等价于->with('articles', \App\Article::all())
     }
 }
